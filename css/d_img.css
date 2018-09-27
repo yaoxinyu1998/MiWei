@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.txt_img{
+    width: 80px;
+    height: 80px;
+    margin-left: 41px;
+    /*text-align: center;*/
+    position: relative;
+}
+.d1{
+    margin-top: 10px;
+    width: 80px;
+    height: 60px;
+    display: block;
+    border-radius: 50%;
+    -webkit-transition: all 1000ms;
+    /*text-align: center;*/
+    line-height: 80px;
+    /*background: url("../images/server_intr/1.png") no-repeat;*/
+    background-size: 100%;
+}
+.txt_img:hover .d1{
+    position: absolute;
+    -webkit-transform: rotate(360deg);
+    -webkit-transform-origin:50% 50%;
+
+}

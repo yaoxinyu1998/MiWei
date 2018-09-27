@@ -1,0 +1,60 @@
+div,html,body{
+    margin:0;
+    padding:0;
+}
+@media screen and (max-width: 1365px) {
+    .container{
+        margin:0 auto;
+        width:455px;
+    }
+}
+/*ÓÒ²àbox*/
+.right_box{
+    width:447px;
+    height:350px;
+    background:url("img/new_cases/lg/01-1.jpg");
+    position:relative;
+    background-position:-110px -40px;
+    transition:all 0.5s;
+}
+div.right_box:hover {
+    background-position: -110px -0px;
+
+}
+/*´ó°××Ö*/
+.right_box>.h1{
+    color:#fff;
+    text-align:center;
+    margin-top:150px;
+    transition:all 0.5s;
+
+}
+.right_box:hover .h1{
+    margin-top:100px;
+}
+/*Ëõ·Å¿ò*/
+.right_box>p{
+    position:absolute;
+    width:400px;
+    height:300px;
+    border:1px solid #fff;
+    top:10px;
+    left:20px;
+    text-align:center;
+    transform: scale(0);
+    opacity:0;
+    transition:all 0.5s;
+}
+/*Ð¡°××Ö*/
+.right_box>p>span{
+    font-size: 20px;
+    text-align: center;
+    color:black;
+    position:absolute;
+    left:120px;
+    top:43%;
+}
+.right_box:hover p{
+    transform: scale(1);
+    opacity:1;
+}
