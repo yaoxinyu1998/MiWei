@@ -9,7 +9,7 @@ a{
     clear: both;
 }
 header{
-    width: 1380px;
+    width: 100%;
     height: 70px;
     transition-property: height;
 }
@@ -78,11 +78,11 @@ header p{
     font-size: 15px;
 }
 .beijing{
-    width: 1380px;
+    width: 100%;
     height: 750px;
 }
 .beijing img{
-    width: 1380px;
+    width: 100%;
     height: 750px;
     z-index: 0;
     position: absolute;
@@ -93,7 +93,7 @@ header p{
     background-color: #ffffff;
     position: relative;
     top: 80px;
-    left: 480px;
+    margin: 0 auto;
 }
 .beijing .son2{
     position: relative;
@@ -111,12 +111,13 @@ header p{
     position: relative;
     height: 80px;
     width: 80px;
-    left: 620px;
+    margin: 0 auto;
     top: -15px;
 }
 .beijing .son3 img{
     height: 70px;
     width: 70px;
+
 }
 .beijing .son3 img:hover{
     transform: rotate(360deg);
@@ -126,32 +127,37 @@ header p{
     -ms-transform: rotate(360deg);
     transition-duration: 0.5s;
 }
- .bottem{
+ /*.bottem{
     border-bottom: 5px solid #f4a72f;
     height: 10px;
     width: 50px;
     margin-top: 4px;
-    margin-left: 645px;
-}
+    margin-left: 1000px;
+    left:745px;
+}*/
  /******关于我们*****/
 .about{
+
     height: 300px;
-    width: 1380px;
+    width: 100%;
 }
-.about h2{;
-    margin-left: 620px;
-    margin-top: 40px;
+.about h2{
+   text-align: center;
 }
  .bottem{
     border-bottom: 5px solid #f4a72f;
     height: 10px;
     width: 50px;
-    margin-top: 4px;
-    margin-left: 640px;
+    margin:0 auto;
 }
-.about .son1{
+ .about .son{
+     height: 410px;
+     width: 900px;
+     margin: 0 auto;
+ }
+.about .son .son1{
     float: left;
-    margin-left: 250px;
+    margin-left: 40px;
     margin-top: 50px;
     height: 300px;
     width: 400px;
@@ -159,6 +165,9 @@ header p{
 .about .son1 .grandson1{
     width: 390px;
     height: 150px;
+    transform:translateX(0px);
+    transition-delay: .6s ;
+    transition-timing-function:ease-out
 }
 .about .son1 .grandson1 p{
     font-size: 50px;
@@ -171,9 +180,9 @@ header p{
     font-size: 15px;
     padding-top: 27px;
 }
-.about .son2{
+.about .son .son2{
     float: left;
-    margin-left: 100px;
+    margin-left: 10px;
     margin-top: 70px;
     height: 400px;
     width: 400px;
@@ -196,22 +205,60 @@ header p{
     width: 400px;
     height: 60px;
 }
+/*****adver****/
+li{
+    list-style: none;
+}
+
+#banner{
+    margin:0 auto;
+    width:700px;
+    height:324px;
+    overflow: hidden;
+    position: relative;
+}
+.banner_box ul{
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+.banner_box ul li{
+    float: left;
+}
+
+.banner_box .banner_list{
+    position: absolute;
+    left:50%;
+    bottom: 1px;
+    margin-left:-50px;
+
+}
+.banner_box .banner_list li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: grey;
+    margin: 0 6px;
+}
+.banner_box .banner_list .active{
+    background-color: black;
+}
 /*****底部*****/
 footer{
     float: left;
-    width: 1360px;
+    width: 100%;
     height: 700px;
     margin-top: 100px;
 }
 footer img {
-    width: 1360px;
+    width: 100%;
     height: 700px;
     padding: 0;
     position: absolute;
 }
 footer .son1{
     position: relative;
-    width: 1360px;
+    width: 100%;
     height: 700px;
     padding: 0;
     background-color: #2f2e2e;
@@ -221,7 +268,7 @@ footer .son2{
     position: relative;
     width: 1000px;
     height: 300px;
-    margin-left: 200px;
+    margin-left: 300px;
     margin-top: -600px;
 }
 footer .son2 li{
@@ -239,7 +286,7 @@ footer .son3{
     position: relative;
     width: 250px;
     height: 250px;
-    margin-left: 550px;
+    margin-left: 650px;
     margin-top: 5px;
 }
 footer .son3 img{

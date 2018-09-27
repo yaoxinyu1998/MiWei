@@ -16,6 +16,7 @@ section .title{
     padding-top: 115px;
     text-align: center;
     font-size: 22px;
+    margin:0 auto;
 }
 section .main{
     width: 166px;

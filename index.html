@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/server_intr.css">
+    <link rel="stylesheet" href="scale.css">
     <link rel="stylesheet" href="css/d_img.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title></title>
 </head>
 <body>
@@ -19,7 +21,7 @@
     <div class="menu1" style="display: none">
         <ul>
             <li><a href="#server">服务介绍</a></li>
-            <li><a href=""> 最新方案</a></li>
+            <li><a href="#ad"> 最新方案</a></li>
             <li><a href="#ab" >关于我们</a></li>
             <li><a href="#contact"> 联系我们</a></li>
         </ul>
@@ -38,8 +40,8 @@
         </div>
     </div>
 </nav>
-<section class="adver" id="server"><!--服务介绍标签-->
-    <div><!--标题-->
+<section id="server"><!--服务介绍标签-->
+    <div ><!--标题-->
         <h2 class="title">服务介绍</h2>
         <div class="bottem"></div>
     </div>
@@ -75,11 +77,34 @@
         </div>
     </div>
 </section>
+<section class="adver" id="ad">
+    <div class="container">
+        <div class="right_box" style="float:left;">
+            <h1 class="h1">品牌（LOGO/VI）</h1>
+            <p>
+                <span>途家盛捷服务公寓.</span>
+            </p>
+        </div>
 
+    <div class="right_box1" style="float:left;">
+        <h1 class="h1">品牌（LOGO/VI）</h1>
+        <p>
+            <span>MODELAB/爱慕内衣.</span>
+        </p>
+    </div>
+    <div class="right_box2" style="float:left;">
+        <h1 class="h1">品牌（LOGO/VI）</h1>
+        <p>
+            <span>觉.</span>
+        </p>
+    </div>
+    </div>
+</section>
 <div class="about" id="ab">
     <h2>关于我们</h2>
     <div class="bottem">
     </div>
+    <div class="son">
     <div class="son1">
         <div class="grandson1">
             <p>MEWE
@@ -107,6 +132,26 @@
         </div>
     </div>
 </div>
+</div>
+<section id="banner"><!--轮播-->
+    <div class="banner_box">
+        <ul id="ul" style="left:0px">
+            <li><img src="img/1.png" alt=""/></li>
+            <li><img src="img/2.png" alt=""/></li>
+            <li><img src="img/3.png" alt=""/></li>
+            <li><img src="img/4.png" alt=""/></li>
+            <li><img src="img/5.png" alt=""/></li>
+        </ul>
+
+        <ul class="banner_list">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</section>
 <footer id="contact">
     <img src="img/bg/footer-bg.jpg">
     <div class="son1" class="clear">
@@ -135,5 +180,6 @@
 
 </footer>
 <script type="text/javascript" src="js/index-menu.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
